@@ -66,34 +66,6 @@
             justify-content: center;
             flex: 1; /* allow container to grow */
         }
-
-        .book-card {
-            display: flex;
-            background-color: #ffffff;
-            border-radius: 12px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-            overflow: hidden;
-            margin-bottom: 20px;
-            width: 100%;
-            max-width: 900px;
-            align-items: stretch; /* make text match image height */
-            height: 40vh;
-        }
-        
-        .book-cover {
-            width: auto;
-            height: 100%;        /* image fills entire card height */
-            max-height: 50vh;    /* limit maximum height */
-            object-fit: cover;
-        }
-        
-        .book-content {
-            padding: 20px;
-            text-align: left;
-            display: flex;
-            flex-direction: column;
-            justify-content: center; /* vertically center text next to image */
-        }
         
 
         h1.book-title {
@@ -156,22 +128,53 @@
             background-color: #ef6c00; /* darker orange hover */
         }
 
+        .book-card {
+            display: flex;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            overflow: hidden;
+            margin-bottom: 20px;
+            width: 100%;
+            max-width: 900px;
+            align-items: stretch; /* make text match image height */
+            height: 40vh; /* card height follows image */
+        }
+        
+        .book-cover {
+            height: 100%;
+            width: auto;
+            max-width: 40%; /* image takes up left side */
+            object-fit: cover;
+        }
+        
+        .book-content {
+            padding: 20px;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        /* Mobile adjustments */
         @media (max-width: 768px) {
             .book-card {
-                flex-direction: column;
-                align-items: center;
+                height: auto; /* let card grow naturally if needed */
+                flex-wrap: wrap; /* allow content to wrap if very narrow */
             }
 
             .book-cover {
-                height: 10vh;
-                width: auto;
-                margin-bottom: 15px;
+                width: 35%; /* fixed portion of width */
+                height: auto;
+                max-height: 200px; /* still visible fully */
             }
 
             .book-content {
-                width: 100%;
+                width: 65%; /* remaining width */
+                min-width: 200px; /* ensure readability */
             }
         }
+        
     </style>
 </head>
 <body>
