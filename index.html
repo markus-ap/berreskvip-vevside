@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="nn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="fediverse:creator" content="@berre@skvip.lol">
+    <title>berre skvip forlag</title>
+
+    <!-- SEO Description -->
+    <meta name="description" content="Berre skvip forlag – komande e-bok: 'Mamma er død' av Markus Maarnes-Gjærde. Dikt i samling skrevet etter morens bortgang.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="Berre skvip forlag - komande e-bok: «Mamma er død» er ei rå samling av dikt skrevet av Markus Maarnes-Gjærde den fyrste måneden etter mora hans døydde.">
+    <meta property="og:image" content="https://berreskvip.no/omslag.png">
+    <meta property="og:url" content="https://berreskvip.no">
+    <meta property="og:site_name" content="berre skvip forlag">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="berre skvip forlag">
+    <meta name="twitter:description" content="Berre skvip forlag - komande e-bok: «Mamma er død» er ei rå samling av dikt skrevet av Markus Maarnes-Gjærde den fyrste måneden etter mora hans døydde.">
+    <meta name="twitter:image" content="https://berreskvip.no/omslag.png">
+    <meta name="twitter:site" content="@berre@skvip.lol">
+
+    <style>
+        /* Basic Reset */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fdfdfd; /* neutral background */
+            color: #333;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        header h1 {
+            font-size: 2rem;
+            margin-bottom: 5px;
+            color: #ff8f00; /* orange title */
+        }
+
+        header p {
+            font-size: 1rem;
+            color: #555; /* neutral text */
+        }
+
+        .container {
+            width: 100%;
+            max-width: 900px;
+            display: flex;
+            justify-content: center;
+            flex: 1; /* allow container to grow */
+        }
+
+        .book-card {
+            display: flex;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            overflow: hidden;
+            margin-bottom: 20px;
+            width: 100%;
+            max-width: 900px;
+            align-items: stretch; /* make text match image height */
+            height: 40vh;
+        }
+        
+        .book-cover {
+            width: auto;
+            height: 100%;        /* image fills entire card height */
+            max-height: 50vh;    /* limit maximum height */
+            object-fit: cover;
+        }
+        
+        .book-content {
+            padding: 20px;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* vertically center text next to image */
+        }
+        
+
+        h1.book-title {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            color: #ff8f00; /* orange for title */
+        }
+
+        h2.book-subtitle {
+            font-size: 1.2rem;
+            font-weight: normal;
+            color: #ff8f00; /* orange subtitle */
+            margin-bottom: 15px;
+        }
+
+        .book-info {
+            margin-bottom: 15px;
+            font-size: 0.95rem;
+            color: #555; /* neutral color for readability */
+        }
+
+        .blurb {
+            font-size: 1rem;
+            line-height: 1.5;
+            margin-bottom: 20px;
+            color: #444;
+        }
+
+        .author-link {
+            color: #fff;
+            background-color: #ff8f00; /* orange highlight */
+            padding: 2px 6px;
+            border-radius: 4px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+            font-weight: bold;
+        }
+
+        .author-link:hover {
+            background-color: #ef6c00;
+        }
+
+        footer {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .mastodon-link {
+            display: inline-block;
+            text-decoration: none;
+            background-color: #ff8f00; /* highlight button */
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 6px;
+            transition: background-color 0.3s;
+            font-weight: bold;
+        }
+
+        .mastodon-link:hover {
+            background-color: #ef6c00; /* darker orange hover */
+        }
+
+        @media (max-width: 768px) {
+            .book-card {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .book-cover {
+                height: 10vh;
+                width: auto;
+                margin-bottom: 15px;
+            }
+
+            .book-content {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>berre skvip</h1>
+        <p>Me veit ikkje alltid kva me driv med, men me gjer det likevel.</p>
+    </header>
+
+    <div class="container">
+        <div class="book-card">
+            <img src="omslag.png" alt="Mamma er død cover" class="book-cover">
+            <div class="book-content">
+                <h1 class="book-title">Mamma er død</h1>
+                <h2 class="book-subtitle">dikt i samling</h2>
+                <div class="book-info">
+                    <p><strong>Forfattar:</strong> 
+                        <a href="https://skvip.lol/@markus" target="_blank" class="author-link">Markus Maarnes-Gjærde</a>
+                    </p>
+                    <p><strong>Utgjevingsdato:</strong> 12. desember 2025</p>
+                    <p><strong>Språk:</strong> Nynorsk</p>
+                </div>
+                <p class="blurb">«Mamma er død» er ei rå samling av dikt skrevet av Markus Maarnes-Gjærde den fyrste måneden etter mora hans døydde 19. juli 2024.</p>
+                <p><strong>ISBN:</strong> 978-82-694452-0-6</p>
+            </div>
+        </div>
+    </div>
+    
+
+    <footer>
+        <a href="https://skvip.lol/@berre" class="mastodon-link" target="_blank">@berre@skvip.lol</a>
+    </footer>
+</body>
+</html>
